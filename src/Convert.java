@@ -23,7 +23,7 @@ public class Convert {
     }
 
 
-    public boolean isRoman(String number){
+    public boolean romanDef(String number){
         return romanNumbers.containsKey(number.charAt(0));
     }
 
