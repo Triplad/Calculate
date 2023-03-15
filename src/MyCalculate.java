@@ -38,11 +38,12 @@ class Main {
         String[] str1 = input.split(opera[defOperands]);
 
 
-        if (converter.isRoman(str1[0]) == converter.isRoman(str1[1])) {
-            int a, b;
-            boolean isRoman = converter.isRoman(str1[0]);
+        if (converter.romanDef(str1[0]) == converter.romanDef(str1[1])) {
+            int a;
+            int b;
+            boolean romanDef = converter.romanDef(str1[0]);
 
-            if (isRoman) {
+            if (romanDef) {
                 a = converter.romanToInt(str1[0]);
                 b = converter.romanToInt(str1[1]);
             } else {
@@ -78,7 +79,7 @@ class Main {
                     break;
             }
 
-            if (isRoman) {
+            if (romanDef) {
                 return converter.intToRoman(result);
             } else {
 
