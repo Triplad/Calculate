@@ -46,7 +46,7 @@ public class Convert {
         char[] arr = romanNumber.toCharArray(); //{'I', 'V'} [2]
         int currentArabian;
         char lastSymbol = arr[end]; //lastSymbol = V;
-        int result = romanNumbers.get(lastSymbol); // RESULT=5 //lastSymbol всё еще ровняется V;
+        int result = romanNumbers.get(lastSymbol); // RESULT=5 //lastSymbol  V;
 
         for (int i = end - 1; i >= 0; i--) { // end=1 arr={I, V} i=0
             char currentSymbol = arr[i]; // I
